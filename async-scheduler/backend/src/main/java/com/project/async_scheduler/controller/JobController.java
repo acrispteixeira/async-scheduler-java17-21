@@ -1,15 +1,14 @@
 package com.project.async_scheduler.controller;
 
+import com.project.async_scheduler.model.Job;
 import com.project.async_scheduler.service.AsyncJobService;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 @RestController
-@RequestMapping("/jobs")
+@RequestMapping("/")
 public class JobController {
     private final AsyncJobService jobService;
 
@@ -18,7 +17,12 @@ public class JobController {
     }
 
     @PostMapping("/{jobName}")
-    public CompletableFuture<String> startJob(@PathVariable String jobName) {
+    public CompletableFuture<String> executeJob(@PathVariable String jobName) {
         return jobService.executeJob(jobName);
+    }
+
+    @GetMapping("/getAllJobs")
+    public List<Job> getAllJobs() {
+        return jobService.getAllJobs();
     }
 }

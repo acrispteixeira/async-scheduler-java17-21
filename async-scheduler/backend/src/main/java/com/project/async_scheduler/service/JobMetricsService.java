@@ -1,4 +1,4 @@
-package com.project.async_scheduler.metrics;
+package com.project.async_scheduler.service;
 
 import io.micrometer.core.instrument.Counter;
 import io.micrometer.core.instrument.MeterRegistry;
@@ -14,5 +14,9 @@ public class JobMetricsService {
 
     public void incrementJobCount() {
         jobCounter.increment();
+    }
+
+    public long getJobCount() {
+        return (long) jobCounter.count();
     }
 }
