@@ -4,11 +4,10 @@ import com.project.async_scheduler.service.JobMetricsService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
-
-import static org.mockito.Mockito.when;
-import static org.assertj.core.api.Assertions.assertThat;
-
 import org.springframework.http.ResponseEntity;
+
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.mockito.Mockito.when;
 
 public class JobMetricsControllerTest {
 

@@ -24,16 +24,32 @@ public class Job {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public String getStatus() {
         return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 
     public LocalDateTime getNextExecution() {
         return nextExecution;
     }
 
+    public void setNextExecution(LocalDateTime nextExecution) {
+        this.nextExecution = nextExecution;
+    }
+
     public long getExecutions() {
         return executions;
+    }
+
+    public void setExecutions(long executions) {
+        this.executions = executions;
     }
 
     public LocalDateTime getCreatedAt() {
