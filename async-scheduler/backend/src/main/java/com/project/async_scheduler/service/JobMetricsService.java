@@ -17,6 +17,6 @@ public class JobMetricsService {
     }
 
     public long getJobCount() {
-        return (long) jobCounter.count();
+        return Math.round(jobCounter.count());
     }
 }

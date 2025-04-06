@@ -17,7 +17,9 @@ public class JobController {
     }
 
     @PostMapping("/{jobName}")
-    public CompletableFuture<String> executeJob(@PathVariable String jobName) {
+
+    // Requisições são automaticamente executadas em Virtual Threads
+    public String executeJob(@PathVariable String jobName) {
         return jobService.executeJob(jobName);
     }
 
