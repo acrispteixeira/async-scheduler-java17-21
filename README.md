@@ -65,3 +65,5 @@ This project serves as a performance and architectural comparison using:
 - ✅ Metrics tracking with Micrometer for observability
 
 The goal is to validate **how modern Java features impact response time, scalability, and developer experience**.
+
+### More information about this project [here](https://anateixeira.tech/2025/04/06/de-volta-ao-java-%e2%98%95/)
