@@ -16,6 +16,8 @@ This project is a **proof of concept** comparing Java 17 and Java 21 in asynchro
 ### 🖥 Backend (Spring Boot)
 
 > Java 17 or 21 must be installed — check the correct branch!
+>
+> This project is using Spring 3.4.3
 
 - Open the project in IntelliJ or VS Code
 - Run the `main` class:  
