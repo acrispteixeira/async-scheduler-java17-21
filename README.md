@@ -1,4 +1,4 @@
-# ⚙️ Async Scheduler: Java 17 vs. 21 🚀
+# ⚙️ Async Jub Runner: Java 17 vs. 21 🚀
 
 This project is a **proof of concept** comparing Java 17 and Java 21 in asynchronous task execution, focusing on **response time, scalability, and code elegance**.
 
