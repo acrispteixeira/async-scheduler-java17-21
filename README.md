@@ -1,25 +1,65 @@
-# Async Scheduler: Java 17 vs. 21 🚀
+# ⚙️ Async Scheduler: Java 17 vs. 21 🚀
 
-**[PT-BR]**
-Este projeto é uma prova de conceito para comparar o desempenho de Java 17 e Java 21 em execução de tarefas (jobs) assíncronas, avaliando tempo de resposta.
+This project is a **proof of concept** comparing Java 17 and Java 21 in asynchronous task execution, focusing on **response time, scalability, and code elegance**.
 
-## Como executar o projeto
+---
 
-### Backend
-- via IntelliJ, executar arquivo principal
+## 📦 Tech Stack
 
-### Frontend
-- Executar o comando `ng serve` dentro da pasta principal
+- **Backend:** Spring Boot (`Java 17` branch) vs. `Java 21` branch
+- **Frontend:** Angular 17
 
-**[EN-US]**
-This project is a proof of concept to compare the performance of Java 17 and Java 21 in asynchronous task execution, evaluating response time.
+---
 
-## How to run the project
+## ▶️ How to Run the Project
 
-### Backend
-- via IntelliJ, run the main file
+### 🖥 Backend (Spring Boot)
 
-### Frontend
-- Run the `ng serve` command inside the main folder
+> Java 17 or 21 must be installed — check the correct branch!
+
+- Open the project in IntelliJ or VS Code
+- Run the `main` class:  
+  `com.project.async_scheduler.AsyncSchedulerApplication`
+
+### 🌐 Frontend (Angular)
+
+```bash
+cd frontend/
+ng serve
+```
+- Then access: http://localhost:4200
 
 ![alt text](image.png)
+
+## 🔍 Strategic Comparison: Java 17 vs Java 21
+
+| Criteria                         | ☕ **Java 17** (Current LTS)              | 🚀 **Java 21** (New LTS)                      |
+|----------------------------------|------------------------------------------|-----------------------------------------------|
+| **Runtime Stability**            | Highly stable and widely supported       | Very stable, with growing adoption            |
+| **Modern Features**              | Limited                                   | Virtual Threads, Sequenced Collections, etc.  |
+| **Infrastructure Compatibility** | Compatible with most platforms            | May require updates to toolchains/VMs         |
+| **Legacy Maintenance**           | Great for backward compatibility          | Less suited to legacy systems                 |
+| **Future-readiness**             | Conservative                              | Visionary and scalable by design              |
+
+## 🚀 Why Java 21?
+
+Java 21 is a **game changer** for scalable, modern applications. It introduces groundbreaking features that simplify concurrency and modernize Java for high-performance workloads:
+
+- 🧵 **Virtual Threads (Project Loom):**  
+  Lightweight threads for massive concurrency with minimal resource use — ideal for I/O-bound and scalable apps.
+
+- 📚 **Sequenced Collections:**  
+  Ordered collections with predictable behavior, improving data consistency.
+
+> If you're building applications for the future — with performance, scalability, and maintainability in mind — **Java 21 is the strategic choice**.
+
+## 🧪 Benchmarking Purpose
+
+This project serves as a performance and architectural comparison using:
+
+- ✅ The same application logic across both Java versions
+- ✅ Consistent frontend interactions to simulate real-world usage
+- ✅ Spring Boot configuration using virtual threads in Java 21
+- ✅ Metrics tracking with Micrometer for observability
+
+The goal is to validate **how modern Java features impact response time, scalability, and developer experience**.
